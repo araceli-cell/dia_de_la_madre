@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sorpresa 💖</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="sorpresa.css">
+
+</head>
+
+<body>
+
+    <!-- FLORES -->
+    <div class="petalos"></div>
+
+    <!-- BRILLO -->
+    <div class="brillo"></div>
+
+    <!-- MUSICA -->
+    <audio id="musica" autoplay loop>
+        <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- TITULO -->
+    <section class="titulo">
+
+        <h1>💖 Para las Mujeres Más Especiales 💖</h1>
+
+        <p>
+            Gracias por tanto amor, cariño y momentos inolvidables 🌸
+        </p>
+
+        <h2 id="texto-maquina"></h2>
+
+        <div id="frase-auto"></div>
+
+    </section>
+
+    <!-- GALERIA -->
+    <section class="galeria">
+
+        <!-- ABUELA -->
+        <div class="card"
+        onclick="abrirModal('abuela')">
+
+            <img src="img/mamaIsabel.jpeg">
+
+            <div class="overlay">
+
+                <h3>Mi Abuela 💐</h3>
+
+                <p>
+                    💖 Mamita, tu amor llena mi corazón de alegría 
+                        gracias por tus abrazos, tus cuidados y 
+                        por estar siempre conmigo. Te quiero muchísimo 🌸
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- MAMA -->
+        <div class="card"
+        onclick="abrirModal('mama')">
+
+            <img src="img/mamabetty.jpg">
+
+            <div class="overlay">
+
+                <h3>Mi Mamá ❤️</h3>
+
+                <p>
+                    💖 Mamá, gracias por ser mi abrazo favorito, 
+                        mi alegría y mi mayor amor, siempre estaré agradecida
+                        por todo lo que haces por mí. Te quiero muchísimo 🌸
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- TIA -->
+        <div class="card"
+        onclick="abrirModal('tia')">
+
+            <img src="img/tiavilma.jpg">
+
+            <div class="overlay">
+
+                <h3>Mi Tía 🌷</h3>
+
+                <p>
+                    💖 Tía, gracias por tu cariño, tus consejos y 
+                        por llenar mi vida de alegría de momentos
+                        especiales. Te quiero mucho 🌸
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CARTA -->
+    <section class="carta">
+
+        <h2>💌 Carta Especial 💌</h2>
+
+        <p>
+            Mamá, mamita y tía, gracias por su amor, sus cuidados y 
+            por llenar mi vida de alegría. Hoy quiero desearles un día 
+            lleno de felicidad y muchos momentos bonitos. 
+            Las quiero muchísimo 🌸
+        </p>
+
+        <p>
+            Gracias por cada abrazo, cada consejo y cada momento
+            compartido. Hoy quiero recordarles lo importantes
+            que son en mi vida y agradecerles por tanto amor
+            incondicional. Siempre serán el corazón de nuestra
+            familia 💖
+        </p>
+
+    </section>
+
+    <!-- BOTONES -->
+    <div class="botones">
+
+        <button id="btnMusic"
+        onclick="toggleMusica()">
+
+            ⏸️ Pausar Música
+
+        </button>
+
+        <button
+        onclick="window.location.href='index.html'">
+
+            Volver 💖
+
+        </button>
+
+    </div>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal"
+    onclick="cerrarModal()">
+
+        <div class="modal-content"
+        onclick="event.stopPropagation()">
+
+            <div id="modalText"></div>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="sorpresa.js"></script>
+
+</body>
+</html>
